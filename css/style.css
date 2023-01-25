@@ -1,1 +1,133 @@
+body {
+    min-height: 100vh;
+    margin:0;
+    background-color: rgba(0, 0, 0, 0.959);
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+.header {
+    background-color: rgb(122, 179, 179);
+    padding: 0.2rem;
+    font-size: 0.4em;
+    list-style: none;
+    text-align: end;
+
+    border: 1px solid red;
+}
+
+/* Footer Area*/
+.footer {
+    padding: 0.2rem;
+    margin: 0;
+}
+
+.footer ul {
+    display:flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1em;
+
+    align-items: center;
+}
+/* Footer Area End*/
+
+
+.card-area {
+    border: 1px solid red;
+    margin: 0.3em;
+    background-color: rgb(122, 179, 179);
+}
+a, a:hover, a:active, a:focus {
+    color:white;
+    text-decoration: none;
+}
+
+
+/* Beginn Content */
+/* Beginn Begruessungs Bereich */
+.begruessung-ueberschrift {
+    text-align: center;
+    color: white;
+    font-family: monospace;
+
+    border: 1px solid red;
+}
+
+.begruessungs-bereich {
+    background-color: rgb(122, 179, 179);
+}
+
+/* Ende Begruessungs Bereich */
+
+/* Warum mache ich das? Bereich Start */
+.warum {
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 0.5fr 1fr;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.384);
+}
+
+.warum-header {
+    grid-row: 1 / 1;
+    grid-column: 2 / 4;
+    text-align: center;
+}
+
+.warum-text {
+    grid-row: 2;
+    grid-column: 1 / 5;
+    font-size: 0.7rem;
+    text-align: center;
+}
+/* Warum mache ich das ? Bereich Ende */
+
+/* Anfang WhoAmI Bereich */
+.whoami {
+
+}
+/* Ende WhoAmI Bereich */
+
+/* Anfang WasIst Bereich */
+.was {
+
+}
+/* Ende WasIst Bereich */
+
+/* Anfang WasMachenWir Bereich */
+.machen{
+
+}
+/* Ende WasMachenWir Bereich */
+
+/* Anfang Unterkategorie Programmieren Bereich */
+.programmieren {
+
+}
+/* Ende Unterkategorie Programmieren Bereich */
+
+/* Anfang Unterkategorie Hardware Bereich */
+.hardware {
+
+}
+/* Ende Unterkategorie Hardware Bereich */
+
+/* Anfang Unterkategorie Hacken Bereich */
+.hacken {
+
+}
+/* Ende Unterkategorie Hacken Bereich */
+
+/* Anfang Unterkategorie Andere Bereich */
+.andere {
+
+}
+/* Ende Unterkategorie Andere Bereich */
+
+/* Anfang WoFindetManUns Bereich */
+.wo {
+
+}
+/* Ende WoFindetManUns Bereich */
+/*Ende Content */
