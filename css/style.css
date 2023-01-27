@@ -1,24 +1,41 @@
+/* Main Settings */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    min-height: 100vh;
-    margin:0;
     background-color: rgba(0, 0, 0, 0.959);
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+h2, h3 {
+    font-family: monospace;
+}
+
+/*
+.img-card{
+    height: 10%;
+    width: 10%;
+}
+*/
+
+/* Header Area */
 .header {
     background-color: rgb(122, 179, 179);
-    padding: 0.2rem;
-    font-size: 0.4em;
+    font-size: 1em;
     list-style: none;
     text-align: end;
-
     border: 1px solid red;
 }
+/* Header Area End */
 
 /* Footer Area*/
 .footer {
     padding: 0.2rem;
     margin: 0;
+    border: 1px solid red;
 }
 
 .footer ul {
@@ -32,6 +49,11 @@ body {
 }
 /* Footer Area End*/
 
+/* Content Area Start */
+.content {
+    gap: 5em;
+}
+/* Content Area End */
 
 .card-area {
     border: 1px solid red;
@@ -50,7 +72,6 @@ a, a:hover, a:active, a:focus {
     text-align: center;
     color: white;
     font-family: monospace;
-
     border: 1px solid red;
 }
 
@@ -85,49 +106,161 @@ a, a:hover, a:active, a:focus {
 
 /* Anfang WhoAmI Bereich */
 .whoami {
+    padding: 0.5em;
+    display:grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+}
 
+.whotext {
+    grid-column: 2 / 4;
+    grid-row: 2;
+    display:flex;
+    align-items: center;
+
+}
+
+.whoami p {
+    text-align: center;
+}
+.whoami h2 {
+    grid-column: 2 / 3;
+    grid-column: 1 / 4;
+    text-align: center;
+}
+
+.picture {
+    grid-column: 1 / 2;
+    display:flex;
+    width: 200px;
+    height: 200px;
+    margin: 1em;
+    border-radius: 50%;
+    background-color:red;
 }
 /* Ende WhoAmI Bereich */
 
 /* Anfang WasIst Bereich */
 .was {
-
+    padding: 0.5em;
+    gap: 1em;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr 3fr;
+    text-align: center;
 }
+
+/* TODO 1 bearbeiten */
+.was-box {
+    border: 1px solid red;
+    padding: 50px;
+    width: 200px;
+}
+
+.was h2 {
+    text-align: center;
+    grid-column: 2 / 4;
+    grid-row: 1;
+}
+
+.was-one {
+    border: 1px solid green;
+    grid-row:2;
+    grid-column: 1 / 2;
+}
+.was-two {
+    border: 1px solid purple;
+    grid-row:2;
+    grid-column: 2 / 3;
+}
+.was-three {
+    border: 1px solid blue;
+    grid-row:2;
+    grid-column: 3 / 4;
+}
+
 /* Ende WasIst Bereich */
 
 /* Anfang WasMachenWir Bereich */
-.machen{
+/*.machen{
 
+}
+*/
+.machen-box {
+    border: 1px solid red;
+    width: 200px;
+    padding: 150px;
 }
 /* Ende WasMachenWir Bereich */
 
 /* Anfang Unterkategorie Programmieren Bereich */
 .programmieren {
+    display:flex;
+    justify-items: center;
+}
+/*
+.programmieren h3 {
 
 }
+
+.progone {
+
+}
+
+.progtwo {
+
+}
+
+.progthree {
+
+}
+*/
 /* Ende Unterkategorie Programmieren Bereich */
 
 /* Anfang Unterkategorie Hardware Bereich */
+/*
 .hardware {
 
 }
 /* Ende Unterkategorie Hardware Bereich */
 
 /* Anfang Unterkategorie Hacken Bereich */
+/*
 .hacken {
 
 }
+*/
 /* Ende Unterkategorie Hacken Bereich */
 
 /* Anfang Unterkategorie Andere Bereich */
+/*
 .andere {
 
 }
+*/
 /* Ende Unterkategorie Andere Bereich */
 
 /* Anfang WoFindetManUns Bereich */
+
+
+.wo h2 {
+    text-align: center;
+}
+/*
+
 .wo {
 
 }
+
+.irc-box {
+}
+
+.discord-box {
+}
+
+.email-box {
+}
+*/
+
 /* Ende WoFindetManUns Bereich */
 /*Ende Content */
